@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/423146738934403465/52c9e882d1784f529f88d1cfe925015e/artifacts
+deleted_time: 1748210734457
+end_time: 1748210610260
+entry_point_name: ''
+experiment_id: '423146738934403465'
+lifecycle_stage: deleted
+run_id: 52c9e882d1784f529f88d1cfe925015e
+run_name: adorable-sheep-616
+run_uuid: 52c9e882d1784f529f88d1cfe925015e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748210610045
+status: 4
+tags: []
+user_id: '99837631'

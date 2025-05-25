@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/423146738934403465/8329a4dd55734a51a856c8c1e1907c07/artifacts
+end_time: 1748211007425
+entry_point_name: ''
+experiment_id: '423146738934403465'
+lifecycle_stage: active
+run_id: 8329a4dd55734a51a856c8c1e1907c07
+run_name: salty-fowl-572
+run_uuid: 8329a4dd55734a51a856c8c1e1907c07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748210998183
+status: 3
+tags: []
+user_id: '99837631'

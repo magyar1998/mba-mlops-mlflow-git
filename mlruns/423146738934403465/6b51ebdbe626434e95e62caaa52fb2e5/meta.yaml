@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/423146738934403465/6b51ebdbe626434e95e62caaa52fb2e5/artifacts
+deleted_time: 1748210734449
+end_time: 1748210572843
+entry_point_name: ''
+experiment_id: '423146738934403465'
+lifecycle_stage: deleted
+run_id: 6b51ebdbe626434e95e62caaa52fb2e5
+run_name: sassy-bear-868
+run_uuid: 6b51ebdbe626434e95e62caaa52fb2e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748210572613
+status: 4
+tags: []
+user_id: '99837631'

@@ -23,6 +23,7 @@ from sklearn.ensemble import ExtraTreesRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, mean_absolute_percentage_error, r2_score
 from sklearn.model_selection import train_test_split
 from matplotlib.colors import TwoSlopeNorm
+import mlflow
 
 
 # ### Carrega os dados
@@ -131,15 +132,28 @@ sts.plot_simulation_distribution(dados_treino, bins=35, title="Distribuição da
 # Simulações
 
 prop_treino = 0.75
-n_estimators = 150
-max_depth = 30
+n_estimators = 200
+max_depth = 60
 n_jobs = -1
 
 dict_params = {"n_estimators":n_estimators,"max_depth":max_depth, "n_jobs":n_jobs,"proporcao_treino": prop_treino}
 
+mlflow.set_tracking_uri('http://127.0.0.1:5000/')
+mlflow.set_experiment(experiment_id=423146738934403465)
 
-dados_validacao, y, nrms_teste, r2_teste, mape_teste, modelo, modelo_ML, X = sts.ML_model_evaluation(dados_simulacao=dados_treino, modelo="extratrees", dict_params=dict_params)
 
+with mlflow.start_run():
+
+    mlflow.sklearn.autolog()
+
+
+    dados_validacao, y, nrms_teste, r2_teste, mape_teste, modelo, modelo_ML, X = sts.ML_model_evaluation(dados_simulacao=dados_treino, modelo="extratrees", dict_params=dict_params)
+    
+
+    dict_metrics = {"parametros": dict_params, "nrms_teste":nrms_teste, "r2_teste":r2_teste}
+
+
+    mlflow.log_metrics({"nrms_teste": nrms_teste})  
 
 
 # In[18]:
@@ -195,37 +209,35 @@ sts.plot_seismic_slice(dados_estimados, title="Slice a ~5000m da Inferência ML"
 sts.plot_seismic_slice(dados_estimados_residual_final, title = "Slice a ~5000m - Residuo da Inferência")
 
 
-# ### MLFLOW Tracking
-
-# #No prompt do Anaconda, no Terminal do VSCode, ou Terminal Python, digitar o comando abaixo para pegar a URL que gerencia a conexão com o MLFLOw(vide aula2):
-# -> mlflow ui
-
-# ### Criando uma lista com as métricas
-
 # In[27]:
 
 
-tuple_1 = ["nrms_teste", "r2_teste", "mape_teste"]
+tuple_tags = ["parametros", "nrms_teste", "r2_teste", "mape_teste"]
 
 
 # In[28]:
 
 
-metrics_tuple = [64.2, 0.58, 71.8]
+metrics_tuple = [dict_params, nrms_teste, r2_teste, mape_teste]
 
 
 # In[29]:
 
 
-dict_metrics = dict(zip(tuple_1, metrics_tuple))
+dict_metrics = dict(zip(tuple_tags, metrics_tuple))
 dict_metrics
 
 
 # In[30]:
 
+# MLFLOW Tracking
 
 
 
-# ### FIM
+
+
+
+
+
 
 # %%

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/423146738934403465/06b8d5ec492e45a0b97a60e4d4116212/artifacts
+deleted_time: 1748210734453
+end_time: 1748210692821
+entry_point_name: ''
+experiment_id: '423146738934403465'
+lifecycle_stage: deleted
+run_id: 06b8d5ec492e45a0b97a60e4d4116212
+run_name: bold-rat-388
+run_uuid: 06b8d5ec492e45a0b97a60e4d4116212
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748210684096
+status: 4
+tags: []
+user_id: '99837631'

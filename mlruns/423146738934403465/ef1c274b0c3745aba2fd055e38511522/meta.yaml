@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/423146738934403465/ef1c274b0c3745aba2fd055e38511522/artifacts
+deleted_time: 1748210734464
+end_time: 1748210672032
+entry_point_name: ''
+experiment_id: '423146738934403465'
+lifecycle_stage: deleted
+run_id: ef1c274b0c3745aba2fd055e38511522
+run_name: incongruous-rat-984
+run_uuid: ef1c274b0c3745aba2fd055e38511522
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748210671800
+status: 4
+tags: []
+user_id: '99837631'

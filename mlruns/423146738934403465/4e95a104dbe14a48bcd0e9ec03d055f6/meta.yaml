@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/423146738934403465/4e95a104dbe14a48bcd0e9ec03d055f6/artifacts
+deleted_time: 1748210838469
+end_time: 1748210789266
+entry_point_name: ''
+experiment_id: '423146738934403465'
+lifecycle_stage: deleted
+run_id: 4e95a104dbe14a48bcd0e9ec03d055f6
+run_name: merciful-hen-146
+run_uuid: 4e95a104dbe14a48bcd0e9ec03d055f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748210781276
+status: 4
+tags: []
+user_id: '99837631'

@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/423146738934403465/3461157b8e0345929db45cac5f07cfeb/artifacts
+deleted_time: 1748210734447
+end_time: 1748210566190
+entry_point_name: ''
+experiment_id: '423146738934403465'
+lifecycle_stage: deleted
+run_id: 3461157b8e0345929db45cac5f07cfeb
+run_name: glamorous-grub-296
+run_uuid: 3461157b8e0345929db45cac5f07cfeb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748210565848
+status: 4
+tags: []
+user_id: '99837631'

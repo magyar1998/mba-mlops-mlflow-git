@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/423146738934403465/a625db7efaac48dfa7ab927dd1a38538/artifacts
+end_time: 1748210347184
+entry_point_name: ''
+experiment_id: '423146738934403465'
+lifecycle_stage: active
+run_id: a625db7efaac48dfa7ab927dd1a38538
+run_name: inquisitive-deer-396
+run_uuid: a625db7efaac48dfa7ab927dd1a38538
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748210331233
+status: 3
+tags: []
+user_id: '99837631'

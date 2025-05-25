@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/423146738934403465/7f50d2222d3444a7bda2364d9a7555e8/artifacts
+end_time: 1748210253359
+entry_point_name: ''
+experiment_id: '423146738934403465'
+lifecycle_stage: active
+run_id: 7f50d2222d3444a7bda2364d9a7555e8
+run_name: handsome-mole-216
+run_uuid: 7f50d2222d3444a7bda2364d9a7555e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748210252986
+status: 3
+tags: []
+user_id: '99837631'
